@@ -7,14 +7,14 @@ from colorama import Fore, Style
 
 
 def encrypt_file(input_file: str, password: str):
-    password_bytes = password.encode()  # Convertir la contraseña a bytes
+    password_bytes = password.encode()  # Convert password to bytes
 
-    key_with_salt = generate_key(input_file, password_bytes)  # Generar la clave utilizando bytes
+    key_with_salt = generate_key(input_file, password_bytes)  # Generate the key using bytes
     if key_with_salt is None:
-        print(Fore.RED + "No se pudo generar la clave." + Style.RESET_ALL)
+        print(Fore.RED + "The key could not be generated." + Style.RESET_ALL)
         return
 
-    key = key_with_salt[16:]  # Obtener la clave sin la sal
+    key = key_with_salt[16:]  # Getting the key without the salt
 
     iv = os.urandom(16)
 
@@ -32,7 +32,7 @@ def encrypt_file(input_file: str, password: str):
         file_out.write(iv)
         file_out.write(encrypted_data)
 
-    print(Fore.LIGHTMAGENTA_EX + f"Archivo ENCRIPTADO guardado como: {output_file}" + Style.RESET_ALL)
+    print(Fore.LIGHTMAGENTA_EX + f"ENCRYPTED file saved as: {output_file}" + Style.RESET_ALL)
     os.remove(input_file)
 
 
@@ -44,7 +44,7 @@ def decrypt_file(input_file: str, password: bytes):
     key_file = os.path.join(os.path.dirname(input_file), base_file + ".GKY")
     key_file = os.path.normpath(key_file)  # Normalize the path
 
-    print(f"Buscando el archivo de la clave: {key_file}")  # Print the name of the key file we are looking for
+    print(f"Searching for the key file: {key_file}")  # Print the name of the key file we are looking for
     if os.path.exists(key_file):
         with open(key_file, "rb") as f:
             key_with_salt = f.read()
@@ -65,14 +65,14 @@ def decrypt_file(input_file: str, password: bytes):
         with open(output_file, "wb") as file_out:
             file_out.write(unpadded_data)
 
-        print(Fore.LIGHTCYAN_EX + f"Archivo DESENCRIPTADO guardado como: {output_file}" + Style.RESET_ALL)
+        print(Fore.LIGHTCYAN_EX + f"UNENCRIPTED file saved as: {output_file}" + Style.RESET_ALL)
         os.remove(input_file)
 
         # Delete the key file after successful decryption
         os.remove(key_file)
 
     else:
-        print(Fore.LIGHTRED_EX + "No se encontró la clave." + Style.RESET_ALL)
+        print(Fore.LIGHTRED_EX + "Key not found." + Style.RESET_ALL)
 
 
 def encrypt_directory(directory: str, password: str):
@@ -84,11 +84,11 @@ def encrypt_directory(directory: str, password: str):
 
 def decrypt_directory(directory: str, password: str):
     if not os.path.exists(directory):
-        print(Fore.LIGHTRED_EX + "La carpeta especificada no existe." + Style.RESET_ALL)
+        print(Fore.LIGHTRED_EX + "The specified folder does not exist." + Style.RESET_ALL)
         return
 
     for root, _, files in os.walk(directory):
         for file in files:
-            if file.endswith(".gie"):  # Solo desencriptar archivos .gie
+            if file.endswith(".gie"):  # Only decrypt .gie files
                 filepath = os.path.join(root, file)
                 decrypt_file(filepath, password)

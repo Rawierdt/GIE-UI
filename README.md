@@ -1,4 +1,4 @@
-![imageTitle](/title.jpg)
+![imageTitle](img/title.jpg)
 
 [![Static Badge](https://img.shields.io/badge/%20build-MIT-brightgreen?logo=github&label=LICENSE)](https://github.com/Rawierdt/GIE-UI/LICENSE)
 ![Static Badge](https://img.shields.io/badge/APRIL%202024-red?label=RELEASE%20DATE)

@@ -32,7 +32,7 @@ Encrypt and decrypt your files and folders with AES, for any file, jpg, png, mp4
 
 - **[Python](https://www.python.org/downloads/)**
 
-### Antivirus advertisement
+### 🦠 Antivirus advertisement
 GIE has the ability to encrypt vital paths and files on your system, so it is considered a risk by the operating system. If you still decide to use it, you should create an exception to the GIE program.
 
 - Matches rule PyInstaller from ruleset PyInstaller at [Yara-rules](https://github.com/bartblaze/Yara-rules) by @bartblaze

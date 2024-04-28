@@ -1,6 +1,6 @@
 ![imageTitle](img/title.png)
 
-[![Static Badge](https://img.shields.io/badge/%20build-MIT-brightgreen?logo=github&label=LICENSE)](https://github.com/Rawierdt/GIE-UI/LICENSE)
+[![Static Badge](https://img.shields.io/badge/%20build-MIT-brightgreen?logo=github&label=LICENSE)]([https://github.com/Rawierdt/GIE-UI/LICENSE](https://github.com/Rawierdt/GIE-UI/blob/main/LICENSE))
 ![Static Badge](https://img.shields.io/badge/APRIL%202024-red?label=RELEASE%20DATE)
 ![Static Badge](https://img.shields.io/badge/LANGUAGE-Python-yellow?logo=python)
 # GIE
@@ -26,11 +26,11 @@ Encrypt and decrypt your files and folders with AES, for any file, jpg, png, mp4
 
 ## 📦 Requirements
 
-**Windows 10+ (64-bit) or macOS Monterey+**
+- **Windows 10+ (64-bit) or macOS Monterey+**
 
-**30 MB disk space**
+- **30 MB disk space**
 
-**[Python](https://www.python.org/downloads/)**
+- **[Python](https://www.python.org/downloads/)**
 
 ### Antivirus advertisement
 GIE has the ability to encrypt vital paths and files on your system, so it is considered a risk by the operating system. If you still decide to use it, you should create an exception to the GIE program.

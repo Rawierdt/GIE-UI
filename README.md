@@ -3,10 +3,10 @@
 [![Static Badge](https://img.shields.io/badge/%20build-MIT-brightgreen?logo=github&label=LICENSE)]([https://github.com/Rawierdt/GIE-UI/LICENSE](https://github.com/Rawierdt/GIE-UI/blob/main/LICENSE))
 ![Static Badge](https://img.shields.io/badge/APRIL%202024-red?label=RELEASE%20DATE)
 ![Static Badge](https://img.shields.io/badge/LANGUAGE-Python-yellow?logo=python)
-# GIE
+# GIE-UI
 
 ## Encrypt and Decrypt
-An Encrypt and Decrypt for files and folders for Windows, written in Python.
+An Encrypt and Decrypt for files and folders, written in Python with UI.
 
 
 > [!CAUTION]

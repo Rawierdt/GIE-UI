@@ -6,7 +6,7 @@
 # GIE-UI
 
 ## Encrypt and Decrypt
-An Encrypt and Decrypt for files and folders, and send it secure, written in Python with UI.
+An Encrypt and Decrypt your files easily and folders, and send it secure, written in Python with UI.
 
 
 > [!CAUTION]

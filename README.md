@@ -108,7 +108,7 @@ It is very important to save the .GKY and the PASSWORD very well.
 
 ---
 
-### [⬇️ Download ⬇️](https://rawierdt.github.io/GIE-UI/)
+### [⬇️ Download ⬇️](rawierdt.github.io/scripts/GIE/)
 
 ### 🤝 Contributing
 
